@@ -2,7 +2,7 @@ import threading
 import socket
 
 host = "127.0.0.1"  # localhost
-port = 5050
+port = int(input("enter your port number: "))
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
