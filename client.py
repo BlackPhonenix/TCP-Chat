@@ -1,10 +1,15 @@
 import socket
 import threading
 
+
+host = '127.0.0.1'
+port = int(input("enter port number of server: "))
 nickname = input("enter your name: ")
+
+
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-client.connect(('127.0.0.1', 10913))
+client.connect((host, port))
 
 
 def receive():
