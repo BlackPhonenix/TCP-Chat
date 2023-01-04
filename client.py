@@ -4,7 +4,7 @@ import threading
 nickname = input("enter your name: ")
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-client.connect(('127.0.0.1', 5050))
+client.connect(('tcp//0.tcp.in.ngrok.io', 10913))
 
 
 def receive():
