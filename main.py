@@ -1,8 +1,9 @@
 import threading
 import socket
 
-host = "127.0.0.1"  # localhost
-port = int(input("enter your port number: "))
+host = str(input("IP: "))
+# print(type(host))# localhost
+port = int(input("enter port number: "))
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
